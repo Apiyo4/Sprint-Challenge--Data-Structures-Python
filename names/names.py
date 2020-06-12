@@ -13,6 +13,8 @@ f.close()
 
 duplicates = []  # Return the list of duplicates in this data structure
 
+# O(n^2)
+
 # Replace the nested for loops below with your improvements
 # for name_1 in names_1:
 #     for name_2 in names_2:
@@ -22,10 +24,16 @@ duplicates = []  # Return the list of duplicates in this data structure
 #Create an instance of binary search
 bst = BSTNode("A")
 #Loop through names in name_1.txt
+
+#O(n)
+
 for name in names_1:
 # Each time insert name in bst    
     bst.insert(name)
 #Loop through names in name_2.tst 
+
+#O(n)
+
 for name in names_2:
 #Check if bst contains the name
    if bst.contains(name):
